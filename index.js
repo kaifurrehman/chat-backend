@@ -29,7 +29,7 @@ app.use(bodyParser.json());
 
 //DB Connection
 mongoose.connect(
-  process.env.DB_CONNECTION,
+  process.env.MONGO_URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("Connected to DB");
